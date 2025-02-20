@@ -8,6 +8,7 @@ Firmware download website：[AC7 V1.0 升级软件](https://www.tenda.com.cn/mat
 ### Environmental simulation
 
 Directly using the httpd in the original firmware will cause the simulation to fail due to the environment check. Here is the patched httpd file (a7__V15.03.06.44_httpd_ok file in this project) (modify the assembly to force skip the environment check step):
+https://github.com/Raining-101/IOT_cve/blob/main/a7__V15.03.06.44_httpd_ok
 
 qemu command：
 
