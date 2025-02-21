@@ -27,7 +27,8 @@ sudo qemu-mipsel-static -L . ./bin/httpd
 ### Vulnerability details
 
 tdhttpd in directory /bin has stack overflow vulnerability. The vulnerability occurrs in the function, which can be accessed via the URL .`fromSetRouteStatic goform/SetStaticRouteCfg`
-![image](https://github.com/Raining-101/IOT_cve/blob/326b7c464ac9bdadf22b3eb19b48fd54df416bde/image/1_tenda-ac8_image.png）
+
+[![image](https://github.com/Raining-101/IOT_cve/blob/326b7c464ac9bdadf22b3eb19b48fd54df416bde/image/2_tenda-ac8_image.png)](https://github.com/Raining-101/IOT_cve/blob/a7697c82331c99189be61d7b19f54cddc00365d5/image/1_tenda-ac8_image.png)
 
 Stack overflow point：
 
