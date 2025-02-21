@@ -32,6 +32,7 @@ tdhttpd in directory /bin has stack overflow vulnerability. The vulnerability oc
 Stack overflow point：
 
 ![image](https://github.com/Raining-101/IOT_cve/blob/326b7c464ac9bdadf22b3eb19b48fd54df416bde/image/2_tenda-ac8_image.png)
+As a result, by requesting the page, an attacker can easily execute a denial of service attack or remote code execution with carefully crafted overflow data.
 
 ### PoC
 
