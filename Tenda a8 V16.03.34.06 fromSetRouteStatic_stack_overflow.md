@@ -47,4 +47,6 @@ res = requests.post("http://192.168.142.100/goform/SetStaticRouteCfg", data=data
 print(res.content)
 ```
 
-![image](https://github.com/Raining-101/IOT_cve/blob/23e96bdb4dae3997d1c5555a8011196e5e357ac1/image/3_tenda-ac8_image.png)
+![image](https://github.com/Raining-101/IOT_cve/blob/d5ce501b4af297283a55dae755559140994e1524/image/Snipaste_2025-02-21_15-17-25.png)
+
+
