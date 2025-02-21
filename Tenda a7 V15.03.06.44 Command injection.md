@@ -6,6 +6,14 @@ Firmware download website：[AC7 V1.0 升级软件](https://www.tenda.com.cn/mat
 ![image](https://github.com/user-attachments/assets/c15fa54c-802a-45a4-aa5f-18607632f90b)
 
 ### Environmental simulation
+need build Network bridge:
+
+```text-x-haskell
+apt install uml-utilities bridge-utils
+brctl addbr br0
+ifconfig br0 192.168.142.100/24
+brctl addif br0 ens33//搭建网桥
+```
 
 Directly using the httpd in the original firmware will cause the simulation to fail due to the environment check. Here is the patched httpd file (a7__V15.03.06.44_httpd_ok file in this project) (modify the assembly to force skip the environment check step):
 https://github.com/Raining-101/IOT_cve/blob/main/a7__V15.03.06.44_httpd_ok
