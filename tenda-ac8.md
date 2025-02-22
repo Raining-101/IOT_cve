@@ -33,7 +33,7 @@ sudo qemu-mipsel-static -L . ./bin/httpd
 
 In the `sub_47D878` function at line 8, data is read from a user-supplied parameter provided by the caller function, and the `src` variable is passed to the functions at lines 28 and 29 without any length validation. This lack of length checking could lead to a stack-based buffer overflow. As a result, by crafting a malicious request to the page, an attacker could easily exploit this vulnerability to execute a denial of service (DoS) attack or achieve remote code execution (RCE). This poses a significant security risk, as it allows an attacker to crash the system or execute arbitrary code remotely.
 
-![](api/attachments/TCxTxrP3hJ1u/image/image.png)
+![image](https://github.com/user-attachments/assets/58e75f9a-479c-4683-adf2-a1edda920426)
 
 ### PoC
 
@@ -58,5 +58,4 @@ response = requests.post(
     verify=False,
 )
 ```
-
-![](api/attachments/boVZC86BE9Gc/image/image.png)
+![image](https://github.com/user-attachments/assets/03eb9bbc-8c82-4716-baf5-4997065cd32d)
