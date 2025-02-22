@@ -31,7 +31,8 @@ sudo qemu-mipsel-static -L . ./bin/httpd
 
 ### Vulnerability details
 
-![](api/attachments/wUZXhdW3Lr7h/image/image.png)
+![image](https://github.com/user-attachments/assets/3690ce25-4788-4dce-b1aa-e1281fe1b1e1)
+
 
 In lines 30 and 38 of the function, data is read from a user-supplied parameter passed by the caller function. However, the variable is passed without any length validation, which could result in a stack-based buffer overflow at either line 30 or 38. Consequently, an attacker could exploit this vulnerability by crafting a malicious request, potentially leading to a denial of service (DoS) condition or even remote code execution (RCE). This poses a significant security risk, as it allows an attacker to crash the system or execute arbitrary code remotely.
 
@@ -62,3 +63,5 @@ response = requests.post(
     data=data, 
     verify=False)
 ```
+
+![image](https://github.com/user-attachments/assets/a7b13097-da23-476b-801e-4bc199555d14)
