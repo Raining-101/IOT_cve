@@ -13,12 +13,12 @@ V1.0 V15.03.06.23
 ### Vulnerability details
 
 Tenda AC10 V1.0 V15.03.06.23 The devName argument in the formSetDeviceName function causes a stack overflow and passes it to the function "set\_device\_name" without any length checking. Once the ROP chain is built, malicious code can be executed.
-
-![](api/attachments/f3k863AMSrJ6/image/image.png)
+![image](https://github.com/user-attachments/assets/5d1c6efd-62dc-4064-8011-0dffee096432)
 
 After getting the mac and devName parameters, type set\_device\_name, check only if the parameter "dev\_name" exists, and use sprintf to pass it to the "mib\_name" array, which will overflow the stack if the length exceeds it
 
-![](api/attachments/HFqG5wHg0dxB/image/image.png)
+![image](https://github.com/user-attachments/assets/8f33ad4a-94f9-47f2-b35e-f1b6d9420636)
+
 
 ### poc
 
@@ -34,4 +34,5 @@ res = requests.post(url=url, data=payload)
 print(res.content)
 ```
 
-![](api/attachments/5mgyxqNbbsnd/image/image.png)
+![image](https://github.com/user-attachments/assets/df91aea1-335e-4519-8853-273238cf1623)
+
