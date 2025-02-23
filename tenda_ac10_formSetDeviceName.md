@@ -24,7 +24,7 @@ After getting the mac and devName parameters, type set\_device\_name, check only
 
 ```text-plain
 import requests
-ip = '192.168.159.100'
+ip = '192.168.142.100'
 url = f'http://{ip}/goform/SetOnlineDevName'
 payload = {
    "mac": '9c:fc:e8:da:9c:5b',
