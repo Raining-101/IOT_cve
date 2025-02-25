@@ -1,11 +1,10 @@
--------------
-
 ### Overview
 
 *   设备官网：[https://www.tenda.com.cn](https://www.tenda.com.cn/product/AX1806.html)
 *   固件下载网站： [AC6V1.0升级软件](https://www.tenda.com.cn/material/show/102661)
 
-![](api/attachments/OLpMhoNjD8Vg/image/image.png)
+![image](https://github.com/user-attachments/assets/75eb2018-df60-4c06-bfb0-1920038a3a22)
+
 
 ### Affected version
 
@@ -19,12 +18,15 @@ brctl addbr br0
 ifconfig br0 192.168.142.100/24
 brctl addif br0 ens33//搭建网桥
 ```
+### Vulnerability details
+
 
 Tenda AC6 **V15.03.05.16** has a stack overflow vulnerability. The vulnerability affects the file /goform/openSchedWifi function setSchedWifi. Setting the schedEndTime parameter causes a stack-based buffer overflow.
 
-![](api/attachments/6zraflQZ105X/image/image.png)
+![image](https://github.com/user-attachments/assets/d0e02466-66f8-4945-a3f4-f19493f1ee73)
 
-![](api/attachments/V6yTKP4NeXX3/image/image.png)
+
+![image](https://github.com/user-attachments/assets/e6af4bfc-247a-48dc-b195-e7b30b3b30fe)
 
 ### poc
 
@@ -43,4 +45,5 @@ print(response.status_code)
 print(response.text)
 ```
 
-![](api/attachments/qR7BsjmYHNvY/image/image.png)
+![image](https://github.com/user-attachments/assets/d78de198-bb74-4f25-ac0d-200c4516cc91)
+
