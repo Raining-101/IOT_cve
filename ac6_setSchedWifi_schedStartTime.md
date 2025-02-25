@@ -26,7 +26,8 @@ brctl addif br0 ens33//搭建网桥
 
 Tenda AC6 **V15.03.05.16** has a stack overflow vulnerability. The vulnerability affects the file /goform/openSchedWifi function setSchedWifi. Setting the schedStartTime parameter causes a stack-based buffer overflow.
 
-![image](https://github.com/user-attachments/assets/31ce4c52-587d-4c9d-a997-fa895d905b2a)
+![image](https://github.com/user-attachments/assets/aae90b78-6ca7-410c-af4a-06962006904c)
+
 
 
 ![image](https://github.com/user-attachments/assets/1a1b19a4-2175-47c1-bfea-c9b1c35e7620)
