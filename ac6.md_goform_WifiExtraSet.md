@@ -1,6 +1,3 @@
-/goform/WifiExtraSet
---------------------
-
 ### Overview
 
 *   设备官网：[https://www.tenda.com.cn](https://www.tenda.com.cn/product/AX1806.html)
