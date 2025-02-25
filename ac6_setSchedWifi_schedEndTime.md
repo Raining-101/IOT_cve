@@ -26,7 +26,8 @@ Tenda AC6 **V15.03.05.16** has a stack overflow vulnerability. The vulnerability
 ![image](https://github.com/user-attachments/assets/d0e02466-66f8-4945-a3f4-f19493f1ee73)
 
 
-![image](https://github.com/user-attachments/assets/e6af4bfc-247a-48dc-b195-e7b30b3b30fe)
+![image](https://github.com/user-attachments/assets/e44effb1-3414-4cb3-adcf-01fcfd87edb7)
+
 
 ### poc
 
