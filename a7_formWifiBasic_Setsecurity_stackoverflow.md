@@ -38,13 +38,15 @@ A stack-based buffer overflow vulnerability in firmware version TenDa AC7 V15.03
 
 formWifiBasicSet
 
-![](api/attachments/uJL66Wcs7OWt/image/image.png)
+![image](https://github.com/user-attachments/assets/e26eb16c-55bc-4efb-a304-52333fd7ca20)
+
 
 formWifiBasicSet takes the parameter security from user input, but does not validate the length of user input.
 
 After that, the function copies security directly into param via functions, resulting in a stack overflow vulnerability. strcpy
 
-![](api/attachments/AAjYQ7b6EN6s/image/image.png)
+![image](https://github.com/user-attachments/assets/b8578afc-8f15-4b33-a945-0a7e9480dd61)
+
 
 ### poc
 
@@ -83,7 +85,7 @@ res = requests.post(url=url, headers=headers, data=data, verify=False)
 print(res)
 ```
 
-![](api/attachments/MkffXHvrQYJE/image/image.png)
+![image](https://github.com/user-attachments/assets/c765e381-4c11-4af6-99ed-cf4559816269)
 
 formWifiBasicSet  ssid stackoverflow
 ------------------------------------
