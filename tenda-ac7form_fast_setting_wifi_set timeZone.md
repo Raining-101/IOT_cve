@@ -7,7 +7,8 @@ This vulnerability lies in the `/goform/fast_setting_wifi_set` page
 
 Tengda AC7 V1.0 V15.03.06.44 found a buffer overflow caused by the timeZone parameter in the form\_fast\_setting\_wifi\_set function, which can cause RCE:
 
-![](api/attachments/eRMd0alKhbE6/image/image.png)
+![image](https://github.com/user-attachments/assets/387bfe10-e1c0-4312-a179-156bed2898bb)
+
 
 ### poc
 
@@ -44,4 +45,5 @@ print(f"Status Code: {response.status_code}")
 print(f"Response Text: {response.text}")
 ```
 
-![](api/attachments/NFQh0mJKC3Fk/image/image.png)
+![image](https://github.com/user-attachments/assets/e4e175e3-4637-4e34-a4d2-e785e424af4c)
+
