@@ -87,7 +87,3 @@ print(res)
 
 ![image](https://github.com/user-attachments/assets/c765e381-4c11-4af6-99ed-cf4559816269)
 
-formWifiBasicSet  ssid stackoverflow
-------------------------------------
-
-### Vulnerability Details
