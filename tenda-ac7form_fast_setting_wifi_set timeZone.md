@@ -1,4 +1,4 @@
-form\_fast\_setting\_wifi\_set timeZone
+form_fast_setting_wifi_set timeZone
 ---------------------------------------
 
 ### Vulnerability Details
