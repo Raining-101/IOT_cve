@@ -47,7 +47,8 @@ data = {"cmdinput": payload}
 response = requests.post(url, data=data)
 print(response.text)
 ```
-![image](https://github.com/user-attachments/assets/ac65ebbf-1756-40d5-82bb-5eb263070f8e)
+![image](https://github.com/user-attachments/assets/b264dd64-a269-4d65-9066-aceb53658512)
+
 
 
 
